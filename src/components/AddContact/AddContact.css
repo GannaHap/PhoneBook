@@ -1,0 +1,92 @@
+.add-contact {
+  overflow: auto;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.img-profil-add-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.img-profil-add-contact label {
+  background-color: rgb(30, 179, 134);
+  color: #fff;
+  padding: 0.3em 0.6em 0.4em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  bottom: -6px;
+  right: -40px;
+  cursor: pointer;
+}
+
+.img-profil-add-contact input {
+  display: none;
+}
+
+.form img {
+  width: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.form label {
+  margin-bottom: 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.btn-add {
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  background-color: rgb(28, 158, 119);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn-add:hover {
+  background-color: rgb(22, 131, 98);
+}
+
+.success-add-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(37, 155, 116);
+  padding: 0.4em 1em;
+  box-sizing: border-box;
+  background-color: rgba(37, 155, 116, 0.25);
+}
+
+.success-add-contact p {
+  margin: 0;
+}

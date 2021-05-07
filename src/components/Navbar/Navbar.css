@@ -1,0 +1,43 @@
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn-menu {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(28, 158, 119);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7em;
+  box-sizing: border-box;
+  transition: 0.2s all ease;
+  text-decoration: none;
+}
+
+.btn-menu i {
+  font-size: 1.3rem;
+}
+
+.btn-menu:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.btn-menu:hover i,
+.btn-menu:hover span {
+  color: rgb(28, 158, 119);
+}
+
+.btn-menu.active {
+  background-color: rgb(247, 247, 247);
+}
+
+.btn-menu.active i,
+.btn-menu.active span {
+  color: rgb(28, 158, 119);
+}

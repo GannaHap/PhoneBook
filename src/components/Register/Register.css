@@ -1,0 +1,107 @@
+.register {
+  margin: 50px auto;
+  width: 576px;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: rgb(28, 158, 119);
+}
+
+.notice {
+  border: 1px solid red;
+  width: 100%;
+  padding: 0.3em 0.7em;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 27, 27, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notice p {
+  margin: 0;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.success-register {
+  border: 1px solid rgb(37, 155, 116);
+  width: 100%;
+  padding: 0.3em 0.7em;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: rgba(37, 155, 116, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-success-login {
+  background-color: rgb(37, 155, 116);
+  color: white;
+  text-decoration: none;
+  padding: 0.2em 1em;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.register form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.register form label {
+  margin-bottom: 8px;
+}
+
+.input {
+  border: 1px solid rgb(28, 158, 119);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.4em 0.8em;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.section-bottom {
+  margin: 20px 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-bottom a {
+  color: rgb(26, 141, 106);
+  text-decoration: none;
+}
+
+.section-bottom a:hover {
+  text-decoration: underline;
+}
+
+.btn-register {
+  color: white;
+  background-color: rgb(28, 158, 119);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btn-register:hover {
+  background-color: rgb(26, 141, 106);
+}

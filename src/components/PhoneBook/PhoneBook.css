@@ -1,0 +1,111 @@
+/* Scrolling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #bebebe;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(153, 153, 153);
+}
+
+/* Body */
+.phone-book {
+  overflow: auto;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+.empty {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: rgb(121, 121, 121);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.empty i {
+  font-size: 3rem;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.bar:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.bar i {
+  cursor: pointer;
+}
+
+.section-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.img-profil-bar {
+  width: 50px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.number-phone {
+  color: rgb(122, 122, 122);
+}
+
+.section-right {
+  width: 60px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.far.fa-heart {
+  color: rgb(28, 158, 119);
+}
+
+.fas.fa-trash-alt {
+  color: rgb(255, 109, 109);
+}
+
+.fas.fa-trash-alt:hover {
+  color: rgb(250, 51, 51);
+}
+
+.loader {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 120px;
+}
