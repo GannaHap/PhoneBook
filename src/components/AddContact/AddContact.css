@@ -39,11 +39,13 @@
   display: none;
 }
 
-.form img {
+.img-profil-add-contact img {
   width: 100px;
+  height: 100px;
+  background-size: cover;
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 7px rgba(21, 148, 89, 0.4);
 }
 
 .form label {

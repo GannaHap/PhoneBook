@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
 import './Login.css';
+import AlertNotice from '../AlertNotice/AlertNotice';
 
 export default class Login extends Component {
   state = {
@@ -42,6 +43,12 @@ export default class Login extends Component {
       .then((response) => {
         const token = response.data.data.token;
         localStorage.setItem('token', token);
+
+        var favorites = [];
+        if (!localStorage.favorites) {
+          localStorage['favorites'] = JSON.stringify(favorites);
+        }
+
         this.setState({
           redirect: true,
         });
@@ -65,18 +72,11 @@ export default class Login extends Component {
       <div className="login">
         <h2>Login</h2>
         {/* Failed Login */}
-        {this.state.notice && (
-          <div className="notice">
-            <p>{this.state.notice}</p>
-            <div className="close" onClick={this.handleClose}>
-              <i className="fal fa-times"></i>
-            </div>
-          </div>
-        )}
+        {this.state.notice && <AlertNotice notice={this.state.notice} handleClose={this.handleClose} />}
 
         <form onSubmit={this.handleLogin}>
           <label htmlFor="email">Email</label>
-          <input type="text" name="email" id="email" className="input" value={this.state.email} onChange={this.handleChange} required />
+          <input type="text" name="email" id="email" className="input" value={this.state.email} onChange={this.handleChange} autoComplete="off" required />
 
           <label htmlFor="password">Password</label>
           <input type="password" name="password" id="password" className="input" value={this.state.password} onChange={this.handleChange} />

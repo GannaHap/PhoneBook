@@ -13,11 +13,13 @@ export default class AddContact extends Component {
     img: '',
     isSuccess: null,
     notice: null,
+    previewImg: null,
   };
 
   handleClose = () => {
     this.setState({
       notice: null,
+      isSuccess: null,
     });
   };
 
@@ -52,6 +54,7 @@ export default class AddContact extends Component {
           email: '',
           img: '',
           notice: null,
+          previewImg: null,
           isSuccess: 'Berhasil Menambahkan Kontak',
         });
       })
@@ -77,9 +80,11 @@ export default class AddContact extends Component {
   handleChangePict = (e) => {
     const target = e.target;
     const file = target.files[0];
+    const prevImg = URL.createObjectURL(file);
 
     this.setState({
       img: file,
+      previewImg: prevImg,
     });
   };
 
@@ -106,7 +111,7 @@ export default class AddContact extends Component {
         )}
         <form className="form" onSubmit={this.handleAddContact}>
           <div className="img-profil-add-contact">
-            <img src="/logo512.png" alt="" />
+            <img src={this.state.previewImg ? this.state.previewImg : '/logo512.png'} alt="Img Profile" />
             <label htmlFor="img">
               <i className="fas fa-edit"></i>
               <span>Change</span>

@@ -26,6 +26,7 @@
   overflow: auto;
   height: 80vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 .empty {
@@ -49,7 +50,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 1em;
-  cursor: pointer;
 }
 
 .bar:hover {
@@ -64,10 +64,14 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
 }
 
 .img-profil-bar {
   width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-color: #fff;
 }
 
 .text {
@@ -87,7 +91,8 @@
   align-items: center;
 }
 
-.far.fa-heart {
+.section-right .far.fa-heart,
+.section-right .fas.fa-heart {
   color: rgb(28, 158, 119);
 }
 

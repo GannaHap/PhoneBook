@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import AlertNotice from '../AlertNotice/AlertNotice';
 
 import './Register.css';
 
@@ -71,14 +72,7 @@ export default class Register extends Component {
       <div className="register">
         <h2>Daftar</h2>
         {/* Failed Register */}
-        {this.state.notice && (
-          <div className="notice">
-            <p>{this.state.notice}</p>
-            <div className="close" onClick={this.handleClose}>
-              <i className="fal fa-times"></i>
-            </div>
-          </div>
-        )}
+        {this.state.notice && <AlertNotice notice={this.state.notice} handleClose={this.handleClose} />}
 
         {/* Login Success */}
         {this.state.isSuccess && (

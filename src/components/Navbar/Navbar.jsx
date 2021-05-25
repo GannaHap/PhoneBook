@@ -20,7 +20,7 @@ export default class Navbar extends Component {
 
   render() {
     const logOut = () => {
-      localStorage.clear();
+      localStorage.removeItem('token');
     };
 
     return (
